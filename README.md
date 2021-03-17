@@ -1,22 +1,26 @@
 # dataviz_workshop
-Тренінг з візуалізації даних
+Тренінг з візуалізації даних (18 березня 2021 року)
+
+Джерело даних: https://github.com/CSSEGISandData/COVID-19 (Інститут Джона Хопкінса)
 
 
-Джерело даних: https://github.com/CSSEGISandData/COVID-19
 
 
-**Найпростіший спосіб отримати ISO коди країн у R:
 
-Потрібен пакет "countrycode"
+**Як отримати ISO коди країн
 
-#встановити бібліотеку
+Для R - потрібен пакет "countrycode"
+
+*#встановити бібліотеку
 install.packages("countrycode")
 
-#завантажити
+*#завантажити
 library(countrycode)
 
-#також потрібна бібліотека dplyr
+*#також потрібна бібліотека "dplyr"
 
+
+*Ось так додаємо в наші дані колонку
 df %>% mutate(ISO = countrycode(countryColumn, origin = 'country.name', destination = 'genc3c'),
          countryColumn = as.character(countryColumn))
          
