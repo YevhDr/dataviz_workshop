@@ -9,12 +9,15 @@
 **Як отримати ISO коди країн (шпаркалка для R-studio)**
 
 *#встановити бібліотеку "countrycode"*
+
 install.packages("countrycode")
 
 *#підʼєднати її*
+
 library(countrycode)
 
 *#також потрібна бібліотека "dplyr"*
+
 library(dplyr)
 
 
