@@ -1,2 +1,5 @@
 # dataviz_workshop
-тренінг з візуалізації даних
+Тренінг з візуалізації даних
+
+
+Джерело даних: https://github.com/CSSEGISandData/COVID-19
