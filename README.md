@@ -6,24 +6,24 @@
 
 
 
-**Як отримати ISO коди країн**
+**Як отримати ISO коди країн (шпаркалка для R-studio)**
 
-Для R - потрібен пакет "countrycode"
-
-*#встановити бібліотеку
+*#встановити бібліотеку "countrycode"*
 install.packages("countrycode")
 
-*#завантажити
+*#підʼєднати її*
 library(countrycode)
 
-*#також потрібна бібліотека "dplyr"
+*#також потрібна бібліотека "dplyr"*
+library(dplyr)
 
 
-*Ось так додаємо в наші дані колонку
-df %>% mutate(ISO = countrycode(countryColumn, origin = 'country.name', destination = 'genc3c'),
-         countryColumn = as.character(countryColumn))
+*Ось так додаємо в наші дані колонку*
+
+**df %>% mutate(ISO = countrycode(countryNameColumn, origin = 'country.name', destination = 'genc3c'),
+         countryNameColumn = as.character(countryNameColumn))**
          
-де countryColumn - колонка у даних, де зазначені назви країн англійською
+countryNameColumn - колонка у даних, де зазначені назви країн
 
 
 
